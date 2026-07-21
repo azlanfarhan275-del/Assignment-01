@@ -1,0 +1,2986 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pakistan Stock Exchange</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #f5f5f5;
+            color: #333;
+        }
+
+        /* Top Green Buttons */
+
+        .top-links {
+            background: #ffffff;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .top-links a {
+            text-decoration: none;
+            background: #4CAF50;
+            color: white;
+            padding: 12px 35px;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: .3s;
+        }
+
+        .top-links a:hover {
+            background: #388E3C;
+        }
+
+        /* Small Menu */
+
+        .small-menu {
+            background: #ececec;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .small-menu a {
+            text-decoration: none;
+            color: #555;
+            font-size: 15px;
+        }
+
+        .small-menu a:hover {
+            color: #2e7d32;
+        }
+
+        /* Header */
+
+        header {
+            background: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo img {
+            width: 65px;
+        }
+
+        .logo h2 {
+            color: #2e7d32;
+            font-weight: normal;
+        }
+
+        /* Search */
+
+        .search-box {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .search-box input {
+            padding: 10px 15px;
+            border: 1px solid #ddd;
+            border-radius: 30px;
+            outline: none;
+            width: 220px;
+        }
+
+        .search-box button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+
+        .search-box button:hover {
+            background: #2e7d32;
+        }
+
+        /* Navbar */
+
+        nav {
+            background: #4d4d4d;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 18px 25px;
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+            transition: .3s;
+        }
+
+        nav ul li:hover {
+            background: #4CAF50;
+        }
+
+        /* Dropdown */
+
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            background: white;
+            min-width: 200px;
+            top: 100%;
+            left: 0;
+            list-style: none;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, .15);
+        }
+
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        nav ul li ul li a {
+            color: #444;
+            padding: 12px;
+        }
+
+        nav ul li ul li a:hover {
+            background: #4CAF50;
+            color: white;
+        }
+
+        /* Hero */
+
+        .hero {
+            height: 520px;
+            background: linear-gradient(rgba(0, 80, 40, .55), rgba(0, 80, 40, .55)),
+                url('https://images.unsplash.com/photo-1642543492481-44e81e3914a7?auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-content h1 {
+            font-size: 52px;
+            margin-bottom: 20px;
+        }
+
+        .hero-content p {
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+
+        .hero-content a {
+            display: inline-block;
+            background: #4CAF50;
+            padding: 14px 35px;
+            border-radius: 4px;
+            text-decoration: none;
+            color: white;
+            transition: .3s;
+        }
+
+        .hero-content a:hover {
+            background: #2e7d32;
+            transform: translateY(-3px);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Top Buttons -->
+
+    <span class = "top-links">
+
+        <a href="#">Market Summary</a>
+
+        <a href="#">psx Knowledge Center</a>
+
+        <a href="#">PSX Data Portal</a>
+        <a style="
+            background: #ececec;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            color: #388E3C;" href="#">Careers</a>
+    
+        <a style="
+            background: #ececec;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        color: #388E3C;" href="#">Daily Downloads</a>
+
+            <input type="text" placeholder="Search">
+
+            <button>Search</button>
+            <p style="color: #43A047;" >English/urdu</p>
+    </span>
+
+
+    <!-- Header -->
+
+    <header>
+
+        <div class="logo">
+
+            <img src="https://www.psx.com.pk/psx/themes/psx/images/logo-animated-75y.gif">
+
+            <h2>Pakistan Stock Exchange</h2>
+
+            <p>
+
+            </p>
+    <nav>
+
+        <ul>
+
+            <li><a href="#">The Exchange</a></li>
+
+            <li><a href="#">Product And Services</a></li>
+
+            <li><a href="#">Recourses And Tools</a></li>
+
+            <li><a href="#">Investors</a></li>
+
+            <li><a href="#">Media Center</a></li>
+
+            <li><a href="#">Legal Framework</a> </li>
+
+        </ul>
+
+    </nav>
+
+        </div>
+
+    </header>
+
+    <!-- Navbar -->
+
+   
+
+    <!-- Hero -->
+
+    <section >
+
+        <div>
+        <img src="./Screenshot 2026-07-20 183658.png" alt="" height="600"width="1470"><br>  
+        <img src="./Screenshot 2026-07-20 194154.png" alt="" height="600"width="1470"><br>
+        <img src="./Screenshot 2026-07-20 200605.png" alt="" height="600"width="1470"><br>
+        <h1>Exchange Insights</h1>
+        <img src="./Screenshot 2026-07-20 201339.png" alt="" height="450"width="1470"><br>
+        <h1>Event Gallery</h1>
+        <img src="./Screenshot 2026-07-20 200703.png" alt=""><br>
+        <h1>Contact Us</h1>
+        <img src="./Screenshot 2026-07-20 200737.png" alt="" height="600"width="1470"><br>
+        
+        </div>
+
+    </section>
+    <!-- =========================
+     HERO FEATURE SECTION
+========================= -->
+
+    <section class="feature-hero">
+
+        <div class="feature-left">
+
+            <span class="tag">PAKISTAN STOCK EXCHANGE</span>
+
+            <h1>
+                Building a Strong <br>
+                Capital Market
+            </h1>
+
+            <p>
+                Explore market information, listed companies,
+                investment opportunities and the latest updates
+                from Pakistan Stock Exchange.
+            </p>
+
+            <a href="#" class="green-btn">Explore Market</a>
+
+        </div>
+
+        <div class="feature-right">
+
+            <div class="market-panel">
+
+                <h2>Today's Market</h2>
+
+                <div class="market-row">
+                    <span>KSE-100</span>
+                    <strong class="green">137,812.55</strong>
+                </div>
+
+                <div class="market-row">
+                    <span>Change</span>
+                    <strong class="green">+824.35</strong>
+                </div>
+
+                <div class="market-row">
+                    <span>Volume</span>
+                    <strong>472.4 M</strong>
+                </div>
+
+                <div class="market-row">
+                    <span>Value</span>
+                    <strong>18.7 B</strong>
+                </div>
+
+                <div class="market-row">
+                    <span>Trades</span>
+                    <strong>286,551</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+     QUICK ACCESS CARDS
+========================= -->
+
+    <section class="quick-services">
+
+        <div class="quick-card">
+
+            <div class="circle">📊</div>
+
+            <h3>Market Data</h3>
+
+            <p>
+                View market summary, indices,
+                historical prices and daily activity.
+            </p>
+
+            <a href="#">Read More</a>
+
+        </div>
+
+        <div class="quick-card">
+
+            <div class="circle">📈</div>
+
+            <h3>Investors</h3>
+
+            <p>
+                Educational resources and investor
+                protection information.
+            </p>
+
+            <a href="#">Read More</a>
+
+        </div>
+
+        <div class="quick-card">
+
+            <div class="circle">🏢</div>
+
+            <h3>Listed Companies</h3>
+
+            <p>
+                Browse listed companies,
+                financial reports and announcements.
+            </p>
+
+            <a href="#">Read More</a>
+
+        </div>
+
+    </section>
+
+    <style>
+        /* =====================
+FEATURE HERO
+===================== */
+
+        .feature-hero {
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            padding: 80px 8%;
+
+            background: white;
+
+            gap: 60px;
+
+        }
+
+        .feature-left {
+
+            flex: 1;
+
+        }
+
+        .tag {
+
+            display: inline-block;
+
+            background: #4CAF50;
+
+            color: white;
+
+            padding: 8px 18px;
+
+            border-radius: 30px;
+
+            font-size: 13px;
+
+            margin-bottom: 20px;
+
+        }
+
+        .feature-left h1 {
+
+            font-size: 50px;
+
+            color: #1f4d2d;
+
+            margin-bottom: 20px;
+
+            line-height: 1.2;
+
+        }
+
+        .feature-left p {
+
+            font-size: 18px;
+
+            line-height: 30px;
+
+            color: #666;
+
+            margin-bottom: 35px;
+
+        }
+
+        .green-btn {
+
+            display: inline-block;
+
+            background: #43A047;
+
+            color: white;
+
+            text-decoration: none;
+
+            padding: 14px 32px;
+
+            border-radius: 5px;
+
+            transition: .3s;
+
+        }
+
+        .green-btn:hover {
+
+            background: #2E7D32;
+
+            transform: translateY(-4px);
+
+        }
+
+        .feature-right {
+
+            flex: 1;
+
+            display: flex;
+
+            justify-content: center;
+
+        }
+
+        .market-panel {
+
+            width: 360px;
+
+            background: white;
+
+            border-top: 6px solid #43A047;
+
+            padding: 30px;
+
+            border-radius: 10px;
+
+            box-shadow: 0 12px 30px rgba(0, 0, 0, .12);
+
+        }
+
+        .market-panel h2 {
+
+            color: #2E7D32;
+
+            margin-bottom: 25px;
+
+        }
+
+        .market-row {
+
+            display: flex;
+
+            justify-content: space-between;
+
+            padding: 15px 0;
+
+            border-bottom: 1px solid #ececec;
+
+        }
+
+        .market-row:last-child {
+
+            border-bottom: none;
+
+        }
+
+        .market-row span {
+
+            color: #666;
+
+        }
+
+        .market-row strong {
+
+            color: #333;
+
+        }
+
+        .green {
+
+            color: #2E7D32;
+
+        }
+
+        /* =====================
+QUICK CARDS
+===================== */
+
+        .quick-services {
+
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 30px;
+
+            padding: 70px 8%;
+
+            background: #f7f7f7;
+
+        }
+
+        .quick-card {
+
+            background: white;
+
+            padding: 35px;
+
+            text-align: center;
+
+            border-radius: 10px;
+
+            transition: .4s;
+
+            box-shadow: 0 6px 18px rgba(0, 0, 0, .08);
+
+        }
+
+        .quick-card:hover {
+
+            transform: translateY(-10px);
+
+            box-shadow: 0 15px 30px rgba(0, 0, 0, .15);
+
+        }
+
+        .circle {
+
+            width: 80px;
+
+            height: 80px;
+
+            background: #43A047;
+
+            border-radius: 50%;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            margin: auto;
+
+            font-size: 34px;
+
+            color: white;
+
+            margin-bottom: 20px;
+
+        }
+
+        .quick-card h3 {
+
+            margin-bottom: 15px;
+
+            color: #2E7D32;
+
+        }
+
+        .quick-card p {
+
+            line-height: 26px;
+
+            color: #666;
+
+            margin-bottom: 20px;
+
+        }
+
+        .quick-card a {
+
+            text-decoration: none;
+
+            color: #43A047;
+
+            font-weight: bold;
+
+        }
+
+        @media(max-width:900px) {
+
+            .feature-hero {
+
+                flex-direction: column;
+
+            }
+
+            .quick-services {
+
+                grid-template-columns: 1fr;
+
+            }
+
+        }
+    </style>
+    <!-- ===========================
+     MARKET HIGHLIGHTS
+=========================== -->
+
+    <section class="market-highlights">
+
+        <div class="section-title">
+            <h2>Market Highlights</h2>
+            <p>Latest information from the Pakistan capital market.</p>
+        </div>
+
+        <div class="highlight-grid">
+
+            <div class="highlight-box">
+                <div class="highlight-icon">📊</div>
+                <h3>KSE-100 Index</h3>
+                <h4 class="positive">137,812.55</h4>
+                <span>▲ +824.35 (+0.60%)</span>
+            </div>
+
+            <div class="highlight-box">
+                <div class="highlight-icon">💹</div>
+                <h3>Total Volume</h3>
+                <h4>472.4 Million</h4>
+                <span>Today's Trading Volume</span>
+            </div>
+
+            <div class="highlight-box">
+                <div class="highlight-icon">💰</div>
+                <h3>Market Value</h3>
+                <h4>18.7 Billion</h4>
+                <span>Total Traded Value</span>
+            </div>
+
+            <div class="highlight-box">
+                <div class="highlight-icon">🏛️</div>
+                <h3>Listed Companies</h3>
+                <h4>527</h4>
+                <span>Across Multiple Sectors</span>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===========================
+     LATEST NEWS
+=========================== -->
+
+    <section class="latest-news">
+
+        <div class="section-title">
+            <h2>Latest News</h2>
+            <p>Recent announcements and updates.</p>
+        </div>
+
+        <div class="news-grid">
+
+            <article class="news-card">
+
+                <img src="https://picsum.photos/500/300?random=11">
+
+                <div class="news-content">
+
+                    <small>20 July 2026</small>
+
+                    <h3>Market closes higher amid strong investor confidence.</h3>
+
+                    <p>
+                        Trading activity remained positive throughout the
+                        session with gains across multiple sectors.
+                    </p>
+
+                    <a href="#">Read More →</a>
+
+                </div>
+
+            </article>
+
+            <article class="news-card">
+
+                <img src="https://picsum.photos/500/300?random=12">
+
+                <div class="news-content">
+
+                    <small>20 July 2026</small>
+
+                    <h3>New listings expected during current financial year.</h3>
+
+                    <p>
+                        Several companies have announced plans to enter
+                        the capital market.
+                    </p>
+
+                    <a href="#">Read More →</a>
+
+                </div>
+
+            </article>
+
+            <article class="news-card">
+
+                <img src="https://picsum.photos/500/300?random=13">
+
+                <div class="news-content">
+
+                    <small>20 July 2026</small>
+
+                    <h3>Investor awareness programme announced.</h3>
+
+                    <p>
+                        Educational sessions will be held across Pakistan
+                        for new investors.
+                    </p>
+
+                    <a href="#">Read More →</a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+    <style>
+        /* SECTION TITLE */
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 36px;
+            color: #1f4d2d;
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: #666;
+        }
+
+        /* MARKET HIGHLIGHTS */
+
+        .market-highlights {
+            padding: 80px 8%;
+            background: #ffffff;
+        }
+
+        .highlight-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+
+        .highlight-box {
+            background: #f8f8f8;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            transition: .35s;
+        }
+
+        .highlight-box:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, .12);
+        }
+
+        .highlight-icon {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .highlight-box h3 {
+            margin-bottom: 12px;
+            color: #2E7D32;
+        }
+
+        .highlight-box h4 {
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+
+        .highlight-box span {
+            color: #777;
+        }
+
+        .positive {
+            color: #2E7D32;
+        }
+
+        /* NEWS */
+
+        .latest-news {
+            padding: 80px 8%;
+            background: #f4f4f4;
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .news-card {
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: .35s;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, .08);
+        }
+
+        .news-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, .12);
+        }
+
+        .news-card img {
+            width: 100%;
+            display: block;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .news-content {
+            padding: 25px;
+        }
+
+        .news-content small {
+            color: #43A047;
+        }
+
+        .news-content h3 {
+            margin: 15px 0;
+            line-height: 1.4;
+            color: #222;
+        }
+
+        .news-content p {
+            color: #666;
+            line-height: 26px;
+            margin-bottom: 20px;
+        }
+
+        .news-content a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #43A047;
+        }
+
+        @media(max-width:900px) {
+
+            .highlight-grid,
+            .news-grid {
+                grid-template-columns: 1fr;
+            }
+
+        }
+    </style>
+    <!-- ===========================
+     LIVE MARKET TICKER
+=========================== -->
+
+    <section class="ticker-section">
+
+        <div class="ticker-title">
+            LIVE MARKET
+        </div>
+
+        <div class="ticker-wrapper">
+
+            <div class="ticker">
+
+                <span class="up">KSE100 137,812.55 ▲ +824.35</span>
+
+                <span class="down">OGDC 229.45 ▼ -1.20</span>
+
+                <span class="up">HBL 185.20 ▲ +2.55</span>
+
+                <span class="up">UBL 341.75 ▲ +4.10</span>
+
+                <span class="down">ENGRO 305.40 ▼ -0.95</span>
+
+                <span class="up">LUCK 1320.00 ▲ +18.60</span>
+
+                <span class="up">MARI 618.20 ▲ +7.80</span>
+
+                <span class="down">PPL 176.50 ▼ -0.40</span>
+
+                <span class="up">FFC 471.10 ▲ +6.75</span>
+
+                <span class="up">PSO 437.60 ▲ +3.45</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===========================
+     MARKET SUMMARY
+=========================== -->
+
+    <section class="market-summary">
+
+        <div class="section-title">
+
+            <h2>Market Summary</h2>
+
+            <p>Major companies traded today.</p>
+
+        </div>
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Company</th>
+
+                    <th>Symbol</th>
+
+                    <th>Price</th>
+
+                    <th>Change</th>
+
+                    <th>Volume</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>Oil & Gas Development</td>
+
+                    <td>OGDC</td>
+
+                    <td>229.45</td>
+
+                    <td class="red">-1.20</td>
+
+                    <td>5.6 M</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Habib Bank</td>
+
+                    <td>HBL</td>
+
+                    <td>185.20</td>
+
+                    <td class="green">+2.55</td>
+
+                    <td>3.4 M</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>United Bank</td>
+
+                    <td>UBL</td>
+
+                    <td>341.75</td>
+
+                    <td class="green">+4.10</td>
+
+                    <td>2.1 M</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Lucky Cement</td>
+
+                    <td>LUCK</td>
+
+                    <td>1320.00</td>
+
+                    <td class="green">+18.60</td>
+
+                    <td>1.2 M</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Pakistan Petroleum</td>
+
+                    <td>PPL</td>
+
+                    <td>176.50</td>
+
+                    <td class="red">-0.40</td>
+
+                    <td>4.7 M</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Pakistan State Oil</td>
+
+                    <td>PSO</td>
+
+                    <td>437.60</td>
+
+                    <td class="green">+3.45</td>
+
+                    <td>2.8 M</td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+    <style>
+        /*=============================
+LIVE TICKER
+=============================*/
+
+        .ticker-section {
+
+            display: flex;
+
+            background: #1f1f1f;
+
+            color: white;
+
+            overflow: hidden;
+
+        }
+
+        .ticker-title {
+
+            background: #2E7D32;
+
+            padding: 18px 30px;
+
+            font-weight: bold;
+
+            white-space: nowrap;
+
+        }
+
+        .ticker-wrapper {
+
+            overflow: hidden;
+
+            width: 100%;
+
+        }
+
+        .ticker {
+
+            display: inline-block;
+
+            white-space: nowrap;
+
+            padding: 18px 0;
+
+            animation: tickerMove 28s linear infinite;
+
+        }
+
+        .ticker span {
+
+            margin-right: 60px;
+
+            font-weight: bold;
+
+        }
+
+        .up {
+
+            color: #4CAF50;
+
+        }
+
+        .down {
+
+            color: #ff5b5b;
+
+        }
+
+        @keyframes tickerMove {
+
+            0% {
+
+                transform: translateX(100%);
+
+            }
+
+            100% {
+
+                transform: translateX(-100%);
+
+            }
+
+        }
+
+        /*=============================
+MARKET SUMMARY
+=============================*/
+
+        .market-summary {
+
+            padding: 80px 8%;
+
+            background: white;
+
+        }
+
+        .market-summary table {
+
+            width: 100%;
+
+            border-collapse: collapse;
+
+            background: white;
+
+            box-shadow: 0 8px 20px rgba(0, 0, 0, .08);
+
+        }
+
+        .market-summary th {
+
+            background: #2E7D32;
+
+            color: white;
+
+            padding: 18px;
+
+            text-align: left;
+
+        }
+
+        .market-summary td {
+
+            padding: 16px;
+
+            border-bottom: 1px solid #ececec;
+
+        }
+
+        .market-summary tr:hover {
+
+            background: #f5fff5;
+
+        }
+
+        .green {
+
+            color: #2E7D32;
+
+            font-weight: bold;
+
+        }
+
+        .red {
+
+            color: #d32f2f;
+
+            font-weight: bold;
+
+        }
+
+        @media(max-width:900px) {
+
+            .market-summary {
+
+                overflow-x: auto;
+
+            }
+
+            .market-summary table {
+
+                min-width: 700px;
+
+            }
+
+        }
+    </style>
+    <!-- ===========================
+     MARKET STATISTICS
+=========================== -->
+
+    <section class="stats-section">
+
+        <div class="section-title">
+            <h2>Market Statistics</h2>
+            <p>Overview of today's trading activity.</p>
+        </div>
+
+        <div class="stats-grid">
+
+            <div class="stat-card">
+                <h1>527+</h1>
+                <p>Listed Companies</p>
+            </div>
+
+            <div class="stat-card">
+                <h1>37</h1>
+                <p>Market Sectors</p>
+            </div>
+
+            <div class="stat-card">
+                <h1>472M</h1>
+                <p>Daily Volume</p>
+            </div>
+
+            <div class="stat-card">
+                <h1>18.7B</h1>
+                <p>Trade Value</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===========================
+     FEATURED ANNOUNCEMENTS
+=========================== -->
+
+    <section class="announcements">
+
+        <div class="section-title">
+            <h2>Featured Announcements</h2>
+            <p>Latest notices from the exchange.</p>
+        </div>
+
+        <div class="announcement-box">
+
+            <div class="announcement">
+                <span class="date">20 Jul 2026</span>
+                <h3>Market Timings Updated</h3>
+                <p>Trading schedule has been revised for the upcoming session.</p>
+                <a href="#">Read More</a>
+            </div>
+
+            <div class="announcement">
+                <span class="date">19 Jul 2026</span>
+                <h3>New Company Listed</h3>
+                <p>A new company has officially joined the Pakistan Stock Exchange.</p>
+                <a href="#">Read More</a>
+            </div>
+
+            <div class="announcement">
+                <span class="date">18 Jul 2026</span>
+                <h3>Investor Awareness Program</h3>
+                <p>Educational seminars will be conducted across major cities.</p>
+                <a href="#">Read More</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===========================
+     UPCOMING EVENTS
+=========================== -->
+
+    <section class="events">
+
+        <div class="section-title">
+            <h2>Upcoming Events</h2>
+        </div>
+
+        <div class="event-list">
+
+            <div class="event-card">
+                <h3>📅 Investor Conference</h3>
+                <p>25 July 2026</p>
+            </div>
+
+            <div class="event-card">
+                <h3>📈 Market Webinar</h3>
+                <p>30 July 2026</p>
+            </div>
+
+            <div class="event-card">
+                <h3>🏛 Annual Listing Forum</h3>
+                <p>05 August 2026</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===========================
+     FOOTER
+=========================== -->
+
+    <footer>
+
+        <div class="footer-grid">
+
+            <div>
+                <h3>Pakistan Stock Exchange</h3>
+                <p>
+                    Providing transparent and efficient capital market
+                    services for investors and listed companies.
+                </p>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Market Data</a></li>
+                    <li><a href="#">Companies</a></li>
+                    <li><a href="#">News</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Contact</h3>
+                <p>Stock Exchange Road</p>
+                <p>Karachi, Pakistan</p>
+                <p>Email: info@example.com</p>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 Pakistan Stock Exchange Demo. All Rights Reserved.
+        </div>
+
+    </footer>
+
+    <style>
+        /* Statistics */
+
+        .stats-section {
+            padding: 80px 8%;
+            background: #f8f8f8;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 40px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, .08);
+            transition: .3s;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .stat-card h1 {
+            font-size: 45px;
+            color: #2E7D32;
+            margin-bottom: 10px;
+        }
+
+        /* Announcements */
+
+        .announcements {
+            padding: 80px 8%;
+            background: white;
+        }
+
+        .announcement-box {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .announcement {
+            background: #f7f7f7;
+            padding: 30px;
+            border-radius: 10px;
+            transition: .3s;
+        }
+
+        .announcement:hover {
+            transform: translateY(-8px);
+        }
+
+        .date {
+            display: inline-block;
+            background: #2E7D32;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            margin-bottom: 15px;
+        }
+
+        .announcement h3 {
+            margin-bottom: 15px;
+        }
+
+        .announcement p {
+            line-height: 26px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .announcement a {
+            text-decoration: none;
+            color: #2E7D32;
+            font-weight: bold;
+        }
+
+        /* Events */
+
+        .events {
+            padding: 80px 8%;
+            background: #f4f4f4;
+        }
+
+        .event-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .event-card {
+            background: white;
+            padding: 35px;
+            border-left: 6px solid #2E7D32;
+            border-radius: 8px;
+            transition: .3s;
+        }
+
+        .event-card:hover {
+            transform: translateY(-6px);
+        }
+
+        /* Footer */
+
+        footer {
+            background: #1f1f1f;
+            color: white;
+            padding: 70px 8% 25px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 50px;
+        }
+
+        .footer-grid h3 {
+            margin-bottom: 20px;
+            color: #4CAF50;
+        }
+
+        .footer-grid p,
+        .footer-grid li {
+            color: #cccccc;
+            line-height: 28px;
+            list-style: none;
+        }
+
+        .footer-grid a {
+            text-decoration: none;
+            color: #cccccc;
+        }
+
+        .footer-grid a:hover {
+            color: #4CAF50;
+        }
+
+        .copyright {
+            margin-top: 40px;
+            text-align: center;
+            border-top: 1px solid #444;
+            padding-top: 20px;
+            color: #999;
+        }
+
+        /* Responsive */
+
+        @media(max-width:900px) {
+
+            .stats-grid,
+            .announcement-box,
+            .event-list,
+            .footer-grid {
+
+                grid-template-columns: 1fr;
+
+            }
+
+        }
+    </style>
+    <script>
+
+        /* ===============================
+           HERO IMAGE SLIDER
+        ================================ */
+
+        const slides = document.querySelectorAll(".slide");
+
+        let currentSlide = 0;
+
+        function showSlide(index) {
+
+            slides.forEach((slide) => {
+
+                slide.classList.remove("active");
+
+            });
+
+            slides[index].classList.add("active");
+
+        }
+
+        setInterval(() => {
+
+            currentSlide++;
+
+            if (currentSlide >= slides.length) {
+
+                currentSlide = 0;
+
+            }
+
+            showSlide(currentSlide);
+
+        }, 5000);
+
+
+        /* ===============================
+           SCROLL REVEAL ANIMATION
+        ================================ */
+
+        const revealElements = document.querySelectorAll(
+
+            ".quick-card,.highlight-box,.news-card,.stat-card,.announcement,.event-card"
+
+        );
+
+        function reveal() {
+
+            let windowHeight = window.innerHeight;
+
+            revealElements.forEach((element) => {
+
+                let top = element.getBoundingClientRect().top;
+
+                if (top < windowHeight - 120) {
+
+                    element.style.opacity = "1";
+
+                    element.style.transform = "translateY(0)";
+
+                }
+
+            });
+
+        }
+
+        revealElements.forEach((element) => {
+
+            element.style.opacity = "0";
+
+            element.style.transform = "translateY(60px)";
+
+            element.style.transition = ".8s";
+
+        });
+
+        window.addEventListener("scroll", reveal);
+
+        reveal();
+
+
+        /* ===============================
+           COUNTER ANIMATION
+        ================================ */
+
+        const counters = document.querySelectorAll(".stat-card h1");
+
+        let counterStarted = false;
+
+        function runCounters() {
+
+            if (counterStarted) return;
+
+            const stats = document.querySelector(".stats-section");
+
+            if (!stats) return;
+
+            let top = stats.getBoundingClientRect().top;
+
+            if (top < window.innerHeight - 100) {
+
+                counterStarted = true;
+
+                counters.forEach(counter => {
+
+                    const target = parseInt(counter.innerText);
+
+                    let count = 0;
+
+                    let speed = Math.max(10, Math.floor(target / 120));
+
+                    let timer = setInterval(() => {
+
+                        count += speed;
+
+                        if (count >= target) {
+
+                            counter.innerText = counter.innerText.replace(/[0-9]+/, target);
+
+                            clearInterval(timer);
+
+                        } else {
+
+                            counter.innerText = counter.innerText.replace(/[0-9]+/, count);
+
+                        }
+
+                    }, 20);
+
+                });
+
+            }
+
+        }
+
+        window.addEventListener("scroll", runCounters);
+
+        runCounters();
+
+
+        /* ===============================
+           TABLE ROW HOVER
+        ================================ */
+
+        const rows = document.querySelectorAll(".market-summary tbody tr");
+
+        rows.forEach((row) => {
+
+            row.addEventListener("mouseenter", () => {
+
+                row.style.transform = "scale(1.01)";
+
+                row.style.transition = ".25s";
+
+            });
+
+            row.addEventListener("mouseleave", () => {
+
+                row.style.transform = "scale(1)";
+
+            });
+
+        });
+
+
+        /* ===============================
+           NAVBAR ACTIVE LINK
+        ================================ */
+
+        const navLinks = document.querySelectorAll("nav a");
+
+        navLinks.forEach(link => {
+
+            link.addEventListener("click", () => {
+
+                navLinks.forEach(l => l.classList.remove("active"));
+
+                link.classList.add("active");
+
+            });
+
+        });
+
+
+        /* ===============================
+           SMOOTH BUTTON EFFECT
+        ================================ */
+
+        const buttons = document.querySelectorAll("a");
+
+        buttons.forEach(btn => {
+
+            btn.addEventListener("mouseenter", () => {
+
+                btn.style.transition = ".3s";
+
+            });
+
+        });
+
+
+        /* ===============================
+           BACK TO TOP BUTTON
+        ================================ */
+
+        const topBtn = document.createElement("button");
+
+        topBtn.innerHTML = "↑";
+
+        topBtn.style.position = "fixed";
+        topBtn.style.bottom = "25px";
+        topBtn.style.right = "25px";
+        topBtn.style.width = "50px";
+        topBtn.style.height = "50px";
+        topBtn.style.borderRadius = "50%";
+        topBtn.style.border = "none";
+        topBtn.style.background = "#2E7D32";
+        topBtn.style.color = "white";
+        topBtn.style.fontSize = "22px";
+        topBtn.style.cursor = "pointer";
+        topBtn.style.display = "none";
+        topBtn.style.zIndex = "9999";
+        topBtn.style.boxShadow = "0 5px 15px rgba(0,0,0,.3)";
+
+        document.body.appendChild(topBtn);
+
+        window.addEventListener("scroll", () => {
+
+            if (window.scrollY > 400) {
+
+                topBtn.style.display = "block";
+
+            } else {
+
+                topBtn.style.display = "none";
+
+            }
+
+        });
+
+        topBtn.onclick = () => {
+
+            window.scrollTo({
+
+                top: 0,
+
+                behavior: "smooth"
+
+            });
+
+        };
+
+    </script>
+    <!-- ===========================
+     LOADING SCREEN
+=========================== -->
+
+    <div id="loader">
+
+        <div class="loader-box">
+
+            <div class="spinner"></div>
+
+            <h2>Pakistan Stock Exchange</h2>
+
+            <p>Loading...</p>
+
+        </div>
+
+    </div>
+
+    <style>
+        /*=============================
+LOADER
+=============================*/
+
+        #loader {
+
+            position: fixed;
+
+            top: 0;
+
+            left: 0;
+
+            width: 100%;
+
+            height: 100%;
+
+            background: white;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            z-index: 999999;
+
+            transition: opacity .8s;
+
+        }
+
+        .loader-box {
+
+            text-align: center;
+
+        }
+
+        .spinner {
+
+            width: 70px;
+
+            height: 70px;
+
+            border: 8px solid #ddd;
+
+            border-top: 8px solid #2E7D32;
+
+            border-radius: 50%;
+
+            animation: spin 1s linear infinite;
+
+            margin: auto auto 20px;
+
+        }
+
+        @keyframes spin {
+
+            100% {
+
+                transform: rotate(360deg);
+
+            }
+
+        }
+
+        /*=============================
+NAV ACTIVE
+=============================*/
+
+        nav a.active {
+
+            background: #2E7D32;
+
+        }
+
+        /*=============================
+CUSTOM SCROLLBAR
+=============================*/
+
+        ::-webkit-scrollbar {
+
+            width: 10px;
+
+        }
+
+        ::-webkit-scrollbar-track {
+
+            background: #eeeeee;
+
+        }
+
+        ::-webkit-scrollbar-thumb {
+
+            background: #2E7D32;
+
+            border-radius: 20px;
+
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+
+            background: #1b5e20;
+
+        }
+
+        /*=============================
+IMAGE HOVER
+=============================*/
+
+        img {
+
+            transition: .4s;
+
+        }
+
+        .news-card:hover img {
+
+            transform: scale(1.08);
+
+        }
+
+        /*=============================
+BUTTON EFFECT
+=============================*/
+
+        button,
+        .green-btn,
+        .hero-content a {
+
+            transition: .3s;
+
+        }
+
+        button:hover,
+        .green-btn:hover,
+        .hero-content a:hover {
+
+            box-shadow: 0 10px 25px rgba(0, 0, 0, .2);
+
+        }
+
+        /*=============================
+MOBILE MENU
+=============================*/
+
+        .menu-toggle {
+
+            display: none;
+
+            font-size: 30px;
+
+            color: white;
+
+            padding: 15px;
+
+            cursor: pointer;
+
+            background: #2E7D32;
+
+            text-align: center;
+
+        }
+
+        @media(max-width:768px) {
+
+            .menu-toggle {
+
+                display: block;
+
+            }
+
+            nav ul {
+
+                display: none;
+
+                flex-direction: column;
+
+            }
+
+            nav ul.show {
+
+                display: flex;
+
+            }
+
+            nav ul li {
+
+                width: 100%;
+
+                text-align: center;
+
+            }
+
+            header {
+
+                flex-direction: column;
+
+                gap: 20px;
+
+            }
+
+            .logo {
+
+                flex-direction: column;
+
+            }
+
+            .search-box {
+
+                width: 100%;
+
+                justify-content: center;
+
+            }
+
+            .search-box input {
+
+                width: 100%;
+
+                max-width: 350px;
+
+            }
+
+            .hero {
+
+                height: 420px;
+
+            }
+
+            .hero-content h1 {
+
+                font-size: 34px;
+
+            }
+
+            .hero-content p {
+
+                font-size: 16px;
+
+            }
+
+        }
+    </style>
+
+    <div class="menu-toggle">
+
+        ☰ MENU
+
+    </div>
+
+    <script>
+
+        /*=============================
+        LOADER
+        =============================*/
+
+        window.addEventListener("load", function () {
+
+            setTimeout(function () {
+
+                document.getElementById("loader").style.opacity = "0";
+
+                setTimeout(function () {
+
+                    document.getElementById("loader").style.display = "none";
+
+                }, 800);
+
+            }, 800);
+
+        });
+
+        /*=============================
+        MOBILE MENU
+        =============================*/
+
+        const menuBtn = document.querySelector(".menu-toggle");
+
+        const navMenu = document.querySelector("nav ul");
+
+        menuBtn.onclick = function () {
+
+            navMenu.classList.toggle("show");
+
+        };
+
+        /*=============================
+        FADE EFFECT ON SCROLL
+        =============================*/
+
+        window.addEventListener("scroll", () => {
+
+            document.querySelectorAll("section").forEach(sec => {
+
+                const top = sec.getBoundingClientRect().top;
+
+                if (top < window.innerHeight - 100) {
+
+                    sec.style.opacity = "1";
+
+                    sec.style.transform = "translateY(0px)";
+
+                } else {
+
+                    sec.style.opacity = ".3";
+
+                    sec.style.transform = "translateY(40px)";
+
+                }
+
+            });
+
+        });
+
+        /*=============================
+        HEADER SHADOW
+        =============================*/
+
+        window.addEventListener("scroll", () => {
+
+            if (window.scrollY > 50) {
+
+                document.querySelector("header").style.boxShadow = "0 5px 20px rgba(0,0,0,.15)";
+
+            } else {
+
+                document.querySelector("header").style.boxShadow = "none";
+
+            }
+
+        });
+
+    </script>
+    <!-- ===========================
+     PREMIUM MARKET DASHBOARD
+=========================== -->
+
+    <section class="premium-dashboard">
+
+        <div class="dashboard-header">
+
+            <h2>Market Dashboard</h2>
+
+            <div class="dashboard-controls">
+
+                <select id="language">
+
+                    <option>English</option>
+                    <option>اردو</option>
+
+                </select>
+
+                <button id="themeBtn">
+
+                    🌙 Dark Mode
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="dashboard-grid">
+
+            <div class="chart-box">
+
+                <h3>Live Market Chart</h3>
+
+                <div class="chart-placeholder">
+
+                    📈 TradingView Chart Here
+
+                </div>
+
+            </div>
+
+            <div class="status-box">
+
+                <h3>Market Status</h3>
+
+                <div class="status open">
+
+                    🟢 OPEN
+
+                </div>
+
+                <p>Trading Session</p>
+
+                <hr>
+
+                <h4>KSE-100</h4>
+
+                <h2 class="green">
+
+                    137,812.55
+
+                </h2>
+
+                <p>+824.35 (+0.60%)</p>
+
+                <hr>
+
+                <h4>Today's Volume</h4>
+
+                <h2>
+
+                    472 Million
+
+                </h2>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <style>
+        /*=============================
+PREMIUM DASHBOARD
+=============================*/
+
+        .premium-dashboard {
+
+            padding: 80px 8%;
+
+            background: #eef5ef;
+
+        }
+
+        .dashboard-header {
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            margin-bottom: 40px;
+
+        }
+
+        .dashboard-header h2 {
+
+            color: #2E7D32;
+
+            font-size: 38px;
+
+        }
+
+        .dashboard-controls {
+
+            display: flex;
+
+            gap: 15px;
+
+        }
+
+        .dashboard-controls select,
+
+        .dashboard-controls button {
+
+            padding: 12px 18px;
+
+            border: none;
+
+            border-radius: 6px;
+
+            background: #2E7D32;
+
+            color: white;
+
+            cursor: pointer;
+
+            font-size: 15px;
+
+        }
+
+        .dashboard-grid {
+
+            display: grid;
+
+            grid-template-columns: 2fr 1fr;
+
+            gap: 35px;
+
+        }
+
+        .chart-box {
+
+            background: white;
+
+            padding: 30px;
+
+            border-radius: 12px;
+
+            box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
+
+        }
+
+        .chart-placeholder {
+
+            height: 420px;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            font-size: 30px;
+
+            color: #888;
+
+            background: #f7f7f7;
+
+            border-radius: 10px;
+
+            margin-top: 20px;
+
+        }
+
+        .status-box {
+
+            background: white;
+
+            padding: 30px;
+
+            border-radius: 12px;
+
+            text-align: center;
+
+            box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
+
+        }
+
+        .status {
+
+            display: inline-block;
+
+            padding: 12px 25px;
+
+            border-radius: 30px;
+
+            font-weight: bold;
+
+            margin: 20px 0;
+
+        }
+
+        .status.open {
+
+            background: #E8F5E9;
+
+            color: #2E7D32;
+
+        }
+
+        .dark {
+
+            background: #121212;
+
+            color: white;
+
+        }
+
+        .dark header,
+
+        .dark nav,
+
+        .dark footer,
+
+        .dark .chart-box,
+
+        .dark .status-box {
+
+            background: #1e1e1e;
+
+            color: white;
+
+        }
+
+        .dark .premium-dashboard {
+
+            background: #181818;
+
+        }
+
+        @media(max-width:900px) {
+
+            .dashboard-grid {
+
+                grid-template-columns: 1fr;
+
+            }
+
+            .dashboard-header {
+
+                flex-direction: column;
+
+                gap: 20px;
+
+            }
+
+        }
+    </style>
+
+    <script>
+
+        /*===========================
+        DARK MODE
+        ===========================*/
+
+        const themeBtn = document.getElementById("themeBtn");
+
+        themeBtn.onclick = function () {
+
+            document.body.classList.toggle("dark");
+
+            if (document.body.classList.contains("dark")) {
+
+                themeBtn.innerHTML = "☀️ Light Mode";
+
+            } else {
+
+                themeBtn.innerHTML = "🌙 Dark Mode";
+
+            }
+
+        };
+
+        /*===========================
+        LANGUAGE DEMO
+        ===========================*/
+
+        document.getElementById("language").onchange = function () {
+
+            alert("Language switched to: " + this.value);
+
+        };
+
+    </script>
+    <!-- =====================================
+     PREMIUM MARKET WIDGETS
+====================================== -->
+
+    <section class="market-widgets">
+
+        <div class="widget-header">
+
+            <h2>Market Watch</h2>
+
+            <div class="widget-actions">
+
+                <div class="notification">
+
+                    🔔
+                    <span class="badge">3</span>
+
+                </div>
+
+                <div class="search-stock">
+
+                    <input type="text" id="stockSearch" placeholder="Search Company...">
+
+                    <div id="searchResults"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="widgets-grid">
+
+            <!-- WATCHLIST -->
+
+            <div class="widget">
+
+                <h3>⭐ Watchlist</h3>
+
+                <table>
+
+                    <tr>
+
+                        <th>Stock</th>
+                        <th>Price</th>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>OGDC</td>
+
+                        <td class="green">
+
+                            229.45
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>HBL</td>
+
+                        <td class="green">
+
+                            185.20
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>UBL</td>
+
+                        <td class="green">
+
+                            341.75
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>LUCK</td>
+
+                        <td class="green">
+
+                            1320.00
+
+                        </td>
+
+                    </tr>
+
+                </table>
+
+            </div>
+
+            <!-- TOP GAINERS -->
+
+            <div class="widget">
+
+                <h3>📈 Top Gainers</h3>
+
+                <ul>
+
+                    <li>LUCK +4.15%</li>
+
+                    <li>FFC +3.87%</li>
+
+                    <li>HBL +2.91%</li>
+
+                    <li>SYS +2.55%</li>
+
+                    <li>ENGRO +2.31%</li>
+
+                </ul>
+
+            </div>
+
+            <!-- TOP LOSERS -->
+
+            <div class="widget">
+
+                <h3>📉 Top Losers</h3>
+
+                <ul>
+
+                    <li>PPL -1.42%</li>
+
+                    <li>OGDC -1.13%</li>
+
+                    <li>MCB -0.94%</li>
+
+                    <li>PSO -0.83%</li>
+
+                    <li>TRG -0.72%</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <style>
+        /*====================================
+PREMIUM WIDGETS
+====================================*/
+
+        .market-widgets {
+
+            padding: 80px 8%;
+
+            background: #fafafa;
+
+        }
+
+        .widget-header {
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            margin-bottom: 40px;
+
+        }
+
+        .widget-actions {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 25px;
+
+        }
+
+        .notification {
+
+            position: relative;
+
+            font-size: 28px;
+
+            cursor: pointer;
+
+        }
+
+        .badge {
+
+            position: absolute;
+
+            top: -8px;
+
+            right: -8px;
+
+            background: red;
+
+            color: white;
+
+            width: 20px;
+
+            height: 20px;
+
+            border-radius: 50%;
+
+            font-size: 11px;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+        }
+
+        .search-stock {
+
+            position: relative;
+
+        }
+
+        .search-stock input {
+
+            width: 280px;
+
+            padding: 12px;
+
+            border: 1px solid #ddd;
+
+            border-radius: 5px;
+
+            outline: none;
+
+        }
+
+        #searchResults {
+
+            position: absolute;
+
+            top: 48px;
+
+            left: 0;
+
+            width: 100%;
+
+            background: white;
+
+            box-shadow: 0 10px 20px rgba(0, 0, 0, .12);
+
+            display: none;
+
+            z-index: 999;
+
+        }
+
+        #searchResults div {
+
+            padding: 12px;
+
+            cursor: pointer;
+
+            border-bottom: 1px solid #eee;
+
+        }
+
+        #searchResults div:hover {
+
+            background: #4CAF50;
+
+            color: white;
+
+        }
+
+        .widgets-grid {
+
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 30px;
+
+        }
+
+        .widget {
+
+            background: white;
+
+            padding: 30px;
+
+            border-radius: 12px;
+
+            box-shadow: 0 8px 20px rgba(0, 0, 0, .08);
+
+            transition: .35s;
+
+        }
+
+        .widget:hover {
+
+            transform: translateY(-8px);
+
+        }
+
+        .widget table {
+
+            width: 100%;
+
+            border-collapse: collapse;
+
+        }
+
+        .widget table td,
+
+        .widget table th {
+
+            padding: 12px;
+
+            border-bottom: 1px solid #eee;
+
+        }
+
+        .widget ul {
+
+            list-style: none;
+
+            margin-top: 15px;
+
+        }
+
+        .widget ul li {
+
+            padding: 12px 0;
+
+            border-bottom: 1px solid #eee;
+
+        }
+
+        @media(max-width:900px) {
+
+            .widgets-grid {
+
+                grid-template-columns: 1fr;
+
+            }
+
+            .widget-header {
+
+                flex-direction: column;
+
+                gap: 20px;
+
+            }
+
+            .search-stock input {
+
+                width: 100%;
+
+            }
+
+        }
+    </style>
+
+    <script>
+
+        /*====================================
+        SEARCH SUGGESTIONS
+        ====================================*/
+
+        const companies = [
+
+            "OGDC",
+
+            "HBL",
+
+            "UBL",
+
+            "LUCK",
+
+            "ENGRO",
+
+            "PPL",
+
+            "PSO",
+
+            "MCB",
+
+            "FFC",
+
+            "SYS"
+
+        ];
+
+        const input = document.getElementById("stockSearch");
+
+        const results = document.getElementById("searchResults");
+
+        input.onkeyup = function () {
+
+            let value = this.value.toLowerCase();
+
+            results.innerHTML = "";
+
+            if (value === "") {
+
+                results.style.display = "none";
+
+                return;
+
+            }
+
+            companies.forEach(company => {
+
+                if (company.toLowerCase().includes(value)) {
+
+                    results.style.display = "block";
+
+                    results.innerHTML += `
+
+<div>${company}</div>
+
+`;
+
+                }
+
+            });
+
+        };
+
+        document.addEventListener("click", () => {
+
+            results.style.display = "none";
+
+        });
+
+        input.addEventListener("click", (e) => {
+
+            e.stopPropagation();
+
+        });
+
+        results.addEventListener("click", (e) => {
+
+            if (e.target.tagName === "DIV") {
+
+                input.value = e.target.innerText;
+
+                results.style.display = "none";
+
+            }
+
+        });
+
+    </script>
